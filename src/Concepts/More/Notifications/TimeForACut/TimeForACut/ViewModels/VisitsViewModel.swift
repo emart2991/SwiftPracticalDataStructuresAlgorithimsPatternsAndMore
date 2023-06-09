@@ -55,7 +55,7 @@ extension VisitsView {
             // Resets the red badge icon over the app set during the notification creation
             UIApplication.shared.applicationIconBadgeNumber = 0
         }
-        
+        //ERIC - question.... UUID is a unique ID generator??
         func LogVisit() -> Visit {
             let visit = Visit(context: context)
             visit.dateOf = Date()

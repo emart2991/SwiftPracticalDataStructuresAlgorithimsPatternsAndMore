@@ -19,6 +19,8 @@ struct VisitsView: View {
         animation: .default)
     private var visits: FetchedResults<Visit>
     @ObservedObject private var model = VisitsViewModel()
+    
+    //ERIC- rather than using a NavigationView use a NavigationStack and a Vstack in order to list all of your visits. is old and boring :D
     var body: some View {
         NavigationView {
             List {

@@ -12,7 +12,7 @@ import UserNotifications
  */
 struct NotificationsManager {
     static let shared = NotificationsManager()
-    
+    //ERIC- did you write this? or was this part of the Xcode function library???
     func requestNotificationAuthorization(){
         // Badge is the red numerical icon that displays over apps needing attention
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
@@ -26,7 +26,7 @@ struct NotificationsManager {
             }
         }
     }
-    
+    // ERIC-nice to see how notifications are "supposed" to work ;)
     func scheduleNotifications(from dateComponent : DateComponents){
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = "Might be time for a cut don't you think?"
